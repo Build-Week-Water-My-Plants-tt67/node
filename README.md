@@ -7,11 +7,11 @@
 | :---------: | :----: | ---------------------      | ------------------------------------ |
 |    Login    |  POST  | /api/users/login           | {username, password}                 |
 |   Create    |  POST  | /api/users/register        | {username, password, phone }         |
-|    Read     |  GET   | /api/users/:user_id        | n/a                                  |
+|    Read     |  GET   | /api/users/:id             | n/a                                  |
 |    Read     |  GET   | /api/users/                | n/a                                  |
-|    Edit     |  PUT   | /api/users/:user_id        | {username, password, phone }         |
-|     Del     | DELETE | /api/users/:user_id        | n/a                                  |
-|    Read     |  GET   | /api/users/:user_id/plants | n/a                                  |
+|    Edit     |  PUT   | /api/users/:id             | {username, password, phone }         |
+|     Del     | DELETE | /api/users/:id             | n/a                                  |
+|    Read     |  GET   | /api/users/:id/plants      | n/a                                  |
 
 ### Plants
 
