@@ -1,6 +1,6 @@
 
 ### ENDPOINTS
-
+base url: https://water-my-plants-tt67.herokuapp.com/
 ### USERS
 
 | User Action | METHOD | ROUTE                      | SEND TO DB                           |
