@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 });
 
 // GET - USER BY ID
-router.get('/:id', (req, res) => {
+router.get('/:user_id', (req, res) => {
     const user_id = req.params.id 
     User.getById(user_id)
     .then(user => {
@@ -31,7 +31,7 @@ router.get('/:id', (req, res) => {
 });
 
 // GET - USERS PLANTS (USER BY ID)
-router.get('/:id/plants', (req, res) => {
+router.get('/:user_id/plants', (req, res) => {
     const user_id = req.params.id;
     Plant.getUserPlants(user_id)
     .then(plants => {
@@ -44,7 +44,7 @@ router.get('/:id/plants', (req, res) => {
 });
 
 // PUT - EDIT USER INFO
-router.put('/:id', (req, res) => {
+router.put('/:user_id', (req, res) => {
     const user_id = req.params.id;
     const newUser = { ...req.body, user_id };
     User.update(newUser)

@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const Plant = require('./plants-model');
 
-// GET - ALL PLANTS
+// GET - ALL PLANTS FROM ALL USERS
 router.get('/', (req, res) => {
     Plant.getAll()
     .then(plants => {
