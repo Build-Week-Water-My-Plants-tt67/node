@@ -5,11 +5,11 @@ const getAll = () => {
 };
 
 const getById = (plant_id) => {
-    return db('plants').where({ plant_id }).first();
+    return db('plants').where("plant_id", plant_id).first();
 };
 
 const getUserPlants = (user_id) => {
-    return db('plants').where({ user_id }); 
+    return db('plants').where("user_id", user_id); 
 };
 
 const addPlant = plant => {
@@ -18,11 +18,11 @@ const addPlant = plant => {
 
 const update = plant => {
     const { plant_id } = plant
-    return db('plants').where({ plant_id }).update(plant, ['nickname', 'h2oFrequency', 'image', 'species','plant_id', 'user_id']);
+    return db('plants').where("plant_id", plant_id).update(plant, ['nickname', 'h2oFrequency', 'image', 'species','plant_id', 'user_id']);
 };
 
 const remove = plant_id => {
-    return db('plants').where({ plant_id }).del();
+    return db('plants').where("plant_id", plant_id).del();
 };
 
 module.exports = {
