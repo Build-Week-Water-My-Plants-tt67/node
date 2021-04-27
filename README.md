@@ -18,7 +18,7 @@ base url: https://water-my-plants-tt67.herokuapp.com/
 | User Action | METHOD | ROUTE                    | SEND TO DB                                          |
 | :---------: | :----: | ---------------          | --------------------------------------------------- |
 |    Read     |  GET   | /api/plants              | n/a                                                 |
-|   Create    |  POST  | /api/plants/:user_id     | { nickname, species, h2oFrequency }                 |
+|   Create    |  POST  | /api/plants/:user_id     | { nickname, species, h2oFrequency, image }                 |
 |    Read     |  GET   | /api/plants/:plant_id    | n/a                                                 |
-|    Edit     |  PUT   | /api/plants/:plant_id    | { nickname, species, h2oFrequency }                 |
+|    Edit     |  PUT   | /api/plants/:plant_id    | { nickname, species, h2oFrequency, image }                 |
 |     Del     | DELETE | /api/plants/:plant_id    | n/a                                                 |
