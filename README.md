@@ -3,7 +3,7 @@
 base url: https://water-my-plants-tt67.herokuapp.com
 ### USERS
 
-User Logins -
+User Logins 
 
 username: ryan password: ryan
 
